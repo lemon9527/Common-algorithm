@@ -22,12 +22,10 @@ int main(void)
 	int number1, number2, complement;
 	bool isfound = false;
 	int i, j;
-
 	for(i = 0; i < SIZE; i++)
 	{
 		number1 = nums[i];
 		complement = target - number1;
-
 		for(j = 0; j < SIZE; j++)
 		{
 			if(i!=j && nums[j] == complement)
@@ -40,7 +38,6 @@ int main(void)
 		if(isfound)
 			break;
 	}
-
 	return 0;
 }
 
